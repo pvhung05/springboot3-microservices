@@ -1,0 +1,6 @@
+.idea/
+target/
+**/target/
+**/*.log
+**/*.sock
+api-gateway/volume-data/
