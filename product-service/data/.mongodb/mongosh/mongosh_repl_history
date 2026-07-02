@@ -1,4 +1,14 @@
 db.product.find().pretty()
 show collections
 db.product.find().pretty()
-s
+show collections
+db.product.drop()
+db.product.find().pretty()
+show collections
+db.product.find().pretty()
+show collections
+db.product.drop()
+db.product.find().pretty()
+show collections
+use product-service
+show dbs
