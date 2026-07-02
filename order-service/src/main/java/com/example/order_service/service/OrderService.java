@@ -1,7 +1,7 @@
 package com.example.order_service.service;
 
 
-import com.example.order_service.client.InventoryClient;
+import com.example.order_service.client.InventoryServiceClient;
 import com.example.order_service.dto.OrderRequest;
 import com.example.order_service.model.Order;
 import com.example.order_service.repository.OrderRepository;
@@ -14,10 +14,10 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class OrderService {
     private final OrderRepository orderRepository;
-    private final InventoryClient inventoryClient;
+    private final InventoryServiceClient inventoryServiceClientClientClient;
 
     public void placeOrder(OrderRequest orderRequest){
-        var isProductInStock = inventoryClient.isInStock(orderRequest.skuCode(), orderRequest.quantity());
+        var isProductInStock = inventoryServiceClientClientClient.isInStock(orderRequest.skuCode(), orderRequest.quantity());
 
         if(isProductInStock){
             //map orderrequest to order object
