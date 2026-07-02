@@ -1,0 +1,4 @@
+db.product.find().pretty()
+show collections
+db.product.find().pretty()
+s
